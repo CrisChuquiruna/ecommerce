@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Remera Oversize Negra",
+    "description": "Remera de algodón 100% orgánico con corte oversize.",
+    "price": 7990,
+    "category": "remeras",
+    "stock": 20,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro"],
+    "image": "/assets/images/remeras/oversize-negra.jpg",
+    "isNew": true
+  },
+  {
+    "id": "2",
+    "name": "Buzo Canguro Beige",
+    "description": "Buzo de frisa con capucha y bolsillo frontal.",
+    "price": 13990,
+    "category": "buzos",
+    "stock": 15,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Beige", "Negro"],
+    "image": "/assets/images/buzos/canguro-beige.jpg",
+    "isNew": false
+  },
+  {
+    "id": "3",
+    "name": "Pantalón Jogger Cargo",
+    "description": "Jogger con bolsillos cargo laterales, ideal para uso urbano.",
+    "price": 15990,
+    "category": "pantalones",
+    "stock": 10,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Gris", "Negro"],
+    "image": "/assets/images/pantalones/jogger-cargo.jpg",
+    "isNew": true
+  },
+  {
+    "id": "4",
+    "name": "Campera Rompeviento Negra",
+    "description": "Campera liviana impermeable con cierre y capucha.",
+    "price": 19990,
+    "category": "camperas",
+    "stock": 8,
+    "sizes": ["M", "L"],
+    "colors": ["Negro", "Verde Militar"],
+    "image": "/assets/images/camperas/rompeviento-negra.jpg",
+    "isNew": false
+  },
+  {
+    "id": "5",
+    "name": "Short Deportivo Dryfit",
+    "description": "Short con tela dryfit ideal para entrenamiento y running.",
+    "price": 6490,
+    "category": "shorts",
+    "stock": 30,
+    "sizes": ["S", "M", "L"],
+    "colors": ["Azul", "Gris Oscuro"],
+    "image": "/assets/images/shorts/deportivo-dryfit.jpg",
+    "isNew": true
+  }
+]
