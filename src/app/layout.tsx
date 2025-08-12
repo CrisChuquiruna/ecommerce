@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
@@ -12,6 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" suppressHydrationWarning>
         <body>
         <ThemeProvider attribute="class" defaultTheme="system">
+          <Navbar />  
+          <hr className='w-full bg-text mb-8'/>
           {children}
         </ThemeProvider>
         </body>

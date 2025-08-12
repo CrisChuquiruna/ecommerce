@@ -8,8 +8,7 @@
     "stock": 20,
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["Negro"],
-    "image": "/assets/images/remeras/oversize-negra.jpg",
-    "isNew": true
+    "image": "/assets/images/remeras/oversize-negra.jpg"
   },
   {
     "id": "2",
@@ -20,8 +19,7 @@
     "stock": 15,
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["Beige", "Negro"],
-    "image": "/assets/images/buzos/canguro-beige.jpg",
-    "isNew": false
+    "image": "/assets/images/buzos/canguro-beige.jpg"
   },
   {
     "id": "3",
@@ -32,8 +30,7 @@
     "stock": 10,
     "sizes": ["M", "L", "XL"],
     "colors": ["Gris", "Negro"],
-    "image": "/assets/images/pantalones/jogger-cargo.jpg",
-    "isNew": true
+    "image": "/assets/images/pantalones/jogger-cargo.jpg"
   },
   {
     "id": "4",
@@ -44,8 +41,7 @@
     "stock": 8,
     "sizes": ["M", "L"],
     "colors": ["Negro", "Verde Militar"],
-    "image": "/assets/images/camperas/rompeviento-negra.jpg",
-    "isNew": false
+    "image": "/assets/images/camperas/rompeviento-negra.jpg"
   },
   {
     "id": "5",
@@ -53,10 +49,9 @@
     "description": "Short con tela dryfit ideal para entrenamiento y running.",
     "price": 6490,
     "category": "shorts",
-    "stock": 30,
+    "stock": 0,
     "sizes": ["S", "M", "L"],
     "colors": ["Azul", "Gris Oscuro"],
-    "image": "/assets/images/shorts/deportivo-dryfit.jpg",
-    "isNew": true
+    "image": "/assets/images/shorts/deportivo-dryfit.jpg"
   }
 ]

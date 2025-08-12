@@ -11,7 +11,7 @@ export default function ProductList() {
   }, [loadProducts])
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-2/3">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-2/3 place-items-center">
       {products.map((product) => (
         <ProductCard
           key={product.id}
