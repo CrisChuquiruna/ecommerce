@@ -24,22 +24,22 @@ export default function ProductModal({
   }, [product])
 
   return (
-    <section className="fixed top-0 left-0 w-full h-full bg-black/70 flex items-center text-[#465947] justify-center z-10">
+    <section className="fixed top-0 left-0 w-full h-full bg-black/70 flex items-end md:items-center text-[#465947] justify-center z-10">
       <div
         className="absolute top-0 left-0 w-full h-full"
         onClick={onClose}
       ></div>
-      <div className="w-95 md:w-3/4 grid grid-cols-2 md:grid-cols-2 md:place-items-start gap-5 justify-start border-black/70 border-2  bg-[#efeceb] text-[#465947] rounded-md z-10 overflow-hidden shadow shadow-text">
+      <div className="w-full md:w-3/4 lg:w-2/4 grid grid-cols-1 md:grid-cols-2 md:place-items-start gap-5 justify-start border-black/70 border-2  bg-[#efeceb] text-[#465947] rounded-md z-10 overflow-hidden shadow shadow-text">
         <Image
           src={product.image}
           alt={product.name}
           width={4480}
           height={6720}
-          className="w-50 md:w-90 md:h-120 left-0 object-cover rounded-l-md md:row-span-3"
+          className="hidden md:block w-50 md:w-90 md:h-120 left-0 object-cover rounded-l-md md:row-span-3"
         />
 
-          <div className="flex flex-col gap-2 pt-5 pr-5">
-            <h1 className="text-3xl font-bold-">{product.name}</h1>
+          <div className="pl-5 md:pl-0 flex flex-col gap-2 pt-5 pr-5">
+            <h1 className="mt-5 text-3xl font-bold-">{product.name}</h1>
             <p className="w-full text-2xl text-start font-bold">
               {product.stock ? `$${product.price}` : "Sin stock"}
             </p>
@@ -90,10 +90,10 @@ export default function ProductModal({
               ))}
             </div>
           </section>
-          <div className="col-span-2 flex gap-5 p-4 md:col-span-1">
+          <div className="col-span-2 flex items-center justify-center gap-5 pr-5 pb-5 md:col-span-1">
             <InputNumber setSelectedQuantity={setSelectedQuantity} />
             <button
-              className="mt-2 font-bold bg-[#465947] text-[#efeceb] text-lg px-4 py-1 cursor-pointer rounded hover:bg-text/80 transition-colors active:bg-secondary/90 disabled:opacity-50"
+              className="font-bold bg-[#465947] text-[#efeceb] text-lg px-4 py-1 cursor-pointer rounded hover:bg-text/80 transition-colors active:bg-secondary/90 disabled:opacity-50"
               onClick={() =>
                 addItem({
                   productId: product.id,

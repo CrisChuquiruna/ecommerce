@@ -11,6 +11,39 @@
     "image": "/assets/images/remeras/oversize-negra.jpg"
   },
   {
+    "id": "6",
+    "name": "Remera Básica Blanca",
+    "description": "Remera clásica de algodón peinado.",
+    "price": 5990,
+    "category": "remeras",
+    "stock": 25,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Blanco"],
+    "image": "/assets/images/remeras/basica-blanca.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Remera Estampada Skate",
+    "description": "Remera de algodón con estampado estilo urbano.",
+    "price": 8990,
+    "category": "remeras",
+    "stock": 12,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Negro", "Blanco"],
+    "image": "/assets/images/remeras/estampada-skate.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Remera Rayada Azul",
+    "description": "Remera de algodón con rayas horizontales azules y blancas.",
+    "price": 8490,
+    "category": "remeras",
+    "stock": 18,
+    "sizes": ["S", "M", "L"],
+    "colors": ["Azul", "Blanco"],
+    "image": "/assets/images/remeras/rayada-azul.jpg"
+  },
+  {
     "id": "2",
     "name": "Buzo Canguro Beige",
     "description": "Buzo de frisa con capucha y bolsillo frontal.",
@@ -20,6 +53,39 @@
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["Beige", "Negro"],
     "image": "/assets/images/buzos/canguro-beige.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Buzo Crewneck Negro",
+    "description": "Buzo sin capucha de frisa liviana, corte clásico.",
+    "price": 12990,
+    "category": "buzos",
+    "stock": 20,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro", "Gris"],
+    "image": "/assets/images/buzos/crewneck-negro.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Buzo Oversize Bordó",
+    "description": "Buzo oversize de algodón frisado con cuello redondo.",
+    "price": 14990,
+    "category": "buzos",
+    "stock": 10,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Bordó"],
+    "image": "/assets/images/buzos/oversize-bordo.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Buzo Hoodie Verde",
+    "description": "Buzo con capucha, estilo urbano, tela gruesa.",
+    "price": 15990,
+    "category": "buzos",
+    "stock": 7,
+    "sizes": ["S", "M", "L"],
+    "colors": ["Verde", "Negro"],
+    "image": "/assets/images/buzos/hoodie-verde.jpg"
   },
   {
     "id": "3",
@@ -33,6 +99,39 @@
     "image": "/assets/images/pantalones/jogger-cargo.jpg"
   },
   {
+    "id": "12",
+    "name": "Pantalón Chino Beige",
+    "description": "Pantalón chino slim fit en gabardina.",
+    "price": 17990,
+    "category": "pantalones",
+    "stock": 14,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Beige"],
+    "image": "/assets/images/pantalones/chino-beige.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Pantalón Jean Slim Azul",
+    "description": "Jean slim fit con lavado azul clásico.",
+    "price": 18990,
+    "category": "pantalones",
+    "stock": 30,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Azul"],
+    "image": "/assets/images/pantalones/jean-slim.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Pantalón Cargo Verde Militar",
+    "description": "Cargo en gabardina, resistente y cómodo.",
+    "price": 16990,
+    "category": "pantalones",
+    "stock": 9,
+    "sizes": ["M", "L"],
+    "colors": ["Verde Militar"],
+    "image": "/assets/images/pantalones/cargo-verde.jpg"
+  },
+  {
     "id": "4",
     "name": "Campera Rompeviento Negra",
     "description": "Campera liviana impermeable con cierre y capucha.",
@@ -44,6 +143,39 @@
     "image": "/assets/images/camperas/rompeviento-negra.jpg"
   },
   {
+    "id": "15",
+    "name": "Campera Denim Azul",
+    "description": "Campera de jean con bolsillos frontales.",
+    "price": 22990,
+    "category": "camperas",
+    "stock": 6,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Azul"],
+    "image": "/assets/images/camperas/denim-azul.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Campera Puffer Negra",
+    "description": "Campera inflable con relleno sintético.",
+    "price": 25990,
+    "category": "camperas",
+    "stock": 5,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Negro"],
+    "image": "/assets/images/camperas/puffer-negra.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Campera de Cuero Eco",
+    "description": "Campera de cuero ecológico estilo biker.",
+    "price": 27990,
+    "category": "camperas",
+    "stock": 4,
+    "sizes": ["M", "L"],
+    "colors": ["Negro"],
+    "image": "/assets/images/camperas/cuero-eco.jpg"
+  },
+  {
     "id": "5",
     "name": "Short Deportivo Dryfit",
     "description": "Short con tela dryfit ideal para entrenamiento y running.",
@@ -53,5 +185,38 @@
     "sizes": ["S", "M", "L"],
     "colors": ["Azul", "Gris Oscuro"],
     "image": "/assets/images/shorts/deportivo-dryfit.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Short Cargo Verde",
+    "description": "Short cargo de gabardina con múltiples bolsillos.",
+    "price": 9990,
+    "category": "shorts",
+    "stock": 11,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Verde Militar"],
+    "image": "/assets/images/shorts/cargo-verde.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Short de Jean Azul",
+    "description": "Short de denim azul con ruedo desflecado.",
+    "price": 10990,
+    "category": "shorts",
+    "stock": 13,
+    "sizes": ["S", "M", "L"],
+    "colors": ["Azul"],
+    "image": "/assets/images/shorts/jean-azul.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Short Running Negro",
+    "description": "Short liviano con calza interior, especial para running.",
+    "price": 8990,
+    "category": "shorts",
+    "stock": 20,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro"],
+    "image": "/assets/images/shorts/running-negro.jpg"
   }
 ]

@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import Sidebar from './Sidebar'
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme()
@@ -36,10 +37,13 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="w-full bg-background py-4 px-10 flex justify-between items-center text-text border-border border-b-[0.1px]">
-      <Link href={'/'}>
-        <h1 className="text-xl font-bold">🛒 MyStore</h1>
-      </Link> 
+    <nav className="w-full bg-background py-4 px-5 md:px-10 flex justify-between items-center text-text border-border border-b-[0.1px]">
+      <div className='flex items-center gap-4'>
+        <Sidebar/>
+        <Link href={'/'}>
+          <h1 className="text-xl font-bold">🛒 Tienda</h1>
+        </Link> 
+      </div>
       <div className="relative flex items-center gap-4 text-[#efeceb]">
         <Link href='/cart' className='flex items-center cursor-pointer ' >
           <span className='text-text'>{cartIcon()}</span>

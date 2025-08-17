@@ -1,12 +1,12 @@
-// store/useCart.ts
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { CartItem } from '@/types/Types'
 
 interface CartState {
   items: CartItem[]
   addItem: (item: CartItem) => void
   removeItem: (productId: string, size: string, color: string) => void
+  updateQuantity: (productId: string, quantity: number) => void
   clearCart: () => void
   totalPrice: () => number
 }
@@ -41,13 +41,20 @@ export const useCart = create<CartState>()(
         )
         set({ items })
       },
+      updateQuantity: (productId, quantity) => {
+        if (quantity <= 0) return
+        const items = get().items.map((item) =>
+          item.productId === productId ? { ...item, quantity } : item
+        )
+        set({ items })
+      },
       clearCart: () => set({ items: [] }),
       totalPrice: () =>
         get().items.reduce((sum, item) => sum + item.price * item.quantity, 0)
     }),
     {
-      name: 'cart-storage', // clave del localStorage
-      getStorage: () => localStorage
+      name: 'cart-storage',
+      storage: createJSONStorage(() => localStorage) 
     }
   )
 )

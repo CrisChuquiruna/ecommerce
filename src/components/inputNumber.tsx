@@ -1,8 +1,8 @@
 
 import { useEffect, useState } from "react"
 
-const InputNumber = ({setSelectedQuantity}: {setSelectedQuantity: (quantity:number) => void}) => {
-  const [quantity, setQuantity] = useState(1)
+const InputNumber = ({setSelectedQuantity, newQuantity}: {setSelectedQuantity: (quantity:number) => void, newQuantity:number}) => {
+  const [quantity, setQuantity] = useState(newQuantity || 1)
 
   const increment = () => setQuantity((prev) => prev + 1)
   const decrement = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1))
@@ -10,20 +10,22 @@ const InputNumber = ({setSelectedQuantity}: {setSelectedQuantity: (quantity:numb
     setSelectedQuantity(quantity)
   },[quantity])
   return (
-    <div className="flex items-center border border-gray-400 rounded w-fit">
-      <button
-        onClick={decrement}
-        className="px-3 py-1 text-gray-600 hover:bg-gray-100"
-      >
-        –
-      </button>
-      <span className="px-4 py-1 text-center select-none">{quantity}</span>
-      <button
-        onClick={increment}
-        className="px-3 py-1 text-gray-600 hover:bg-gray-100"
-      >
-        +
-      </button>
+    <div className="flex items-center h-10  ">
+      <div className="border  border-gray-400 rounded">
+        <button
+          onClick={decrement}
+          className="px-2 py-2 text-text hover:bg-text/10 transition-colors active:bg-text/20"
+        >
+          –
+        </button>
+        <span className="px-4 py-2 text-center select-none">{quantity}</span>
+        <button
+          onClick={increment}
+          className="px-2 py-2 text-text hover:bg-text/10 transition-colors active:bg-text/20"
+        >
+          +
+        </button>
+      </div>
     </div>
   )
 }
